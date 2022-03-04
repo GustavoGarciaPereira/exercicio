@@ -1,0 +1,11 @@
+http://www.tcc.sc.usp.br/tce/disponiveis/18/180450/tce-18012018-182056/?&lang=br
+Atividade 1: Tolerância a Falhas, aplicações e dependabilidade Realizar uma pesquisa bibliográfica sobre um exemplo/tipo de aplicação que necessite ou recomenda-se o uso de Tolerância a Falhas. 
+
+Escrever um pequeno texto sobre a aplicação, procurando responder as seguintes questões: 
+• Quais são os aspectos críticos do funcionamento dessa aplicação em relação à presença de falhas? 
+• Quais são os requisitos dessas aplicações quanto à Tolerância a Falhas? 
+• Que atributos da Dependabilidade são importantes nesse cenário da aplicação e porquê?
+
+
+Peguei como exemplo o  trabalho “Implementação de ferramenta de tolerância a falhas para sistema de alta disponibilidade”.
+
