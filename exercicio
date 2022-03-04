@@ -1,0 +1,31 @@
+import string
+letras = list(string.ascii_lowercase)
+
+
+def cifra(p, n = 3):
+    palavra = p.lower()
+    palavra = p.upper()
+    resposta = ""
+    for num in range(len(palavra.strip())):
+        for i in range(len(letras)):
+            if letras[i].upper() == palavra.strip()[num]:
+                resposta += (letras[i+n])
+    return resposta
+
+def dec_cifra(p, n = 3):
+    palavra = p.lower()
+    palavra = p.upper()
+    resposta = ""
+    for num in range(len(palavra.strip())):
+        for i in range(len(letras)):
+            if letras[i].upper() == palavra.strip()[num]:
+                resposta += (letras[i-n])
+    return resposta
+
+print(cifra("ABC",1))
+print(cifra("gustavo",1))
+
+entra = cifra("ABC",1)
+entra_2 = cifra("gustavo",1)
+print(dec_cifra(entra,1))
+print(dec_cifra(entra_2,1))
