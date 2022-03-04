@@ -1,6 +1,7 @@
 import string
+import sys
+n = len(sys.argv)
 letras = list(string.ascii_lowercase)
-
 
 def cifra(p, n = 3):
     palavra = p.lower()
@@ -10,6 +11,8 @@ def cifra(p, n = 3):
         for i in range(len(letras)):
             if letras[i].upper() == palavra.strip()[num]:
                 resposta += (letras[i+n])
+                n += 1
+                
     return resposta
 
 def dec_cifra(p, n = 3):
@@ -20,8 +23,12 @@ def dec_cifra(p, n = 3):
         for i in range(len(letras)):
             if letras[i].upper() == palavra.strip()[num]:
                 resposta += (letras[i-n])
+                n+=1
     return resposta
 
+
+
+'''
 print(cifra("ABC",1))
 print(cifra("gustavo",1))
 
@@ -29,3 +36,8 @@ entra = cifra("ABC",1)
 entra_2 = cifra("gustavo",1)
 print(dec_cifra(entra,1))
 print(dec_cifra(entra_2,1))
+'''
+
+print(cifra("gggg",n))
+en = cifra("gggg",n)
+print(dec_cifra(en,n))
